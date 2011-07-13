@@ -1,0 +1,22 @@
+====== OpenERP e-learning =====
+
+===== Requeriments =====
+
+Intall OOOP. 
+You can download OOOP github project:
+https://github.com/zikzakmedia/ooop
+
+===== Configuration =====
+
+Edit config.py with OpenERP connection. If you have install Pyro Protocol, you can use this protocol. Default Protoco is XML-RPC
+
+Install OpenERP Modules availables addons-extra:
+* training
+* training_elearning
+* training_exam
+* training_doc
+* training_django
+
+===== Licence =====
+
+GNU Affero GPL v3

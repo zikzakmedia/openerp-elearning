@@ -1,0 +1,304 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-07-13 09:48+0200\n"
+"PO-Revision-Date: 2011-07-13 11:02+0100\n"
+"Last-Translator: Raimon Esteve <resteve@zikzakmedia.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: settings.py:42
+msgid "Catalan"
+msgstr "Català"
+
+#: templates/default/404.html:9
+msgid "404 Not Found"
+msgstr "404 página no encontrada"
+
+#: templates/default/error.html:5
+msgid "Error"
+msgstr "Error"
+
+#: templates/default/error.html:10
+msgid "An unexpected error has occurred and has not been able to continue. Repeat again or contact us."
+msgstr "Un error inesperado ha sucedido y no se ha podido continuar. Repite de nuevo o contacte con nosotros."
+
+#: templates/default/layout.html:30
+msgid "e-learning OpenERP"
+msgstr "e-learning OpenERP"
+
+#: templates/default/layout.html:34
+msgid "Login"
+msgstr "Entra"
+
+#: templates/default/layout.html:34
+#: templates/default/partner/menu.html:6
+#: templates/default/partner/profile.html:19
+msgid "Logout"
+msgstr "Salir"
+
+#: templates/default/layout.html:35
+msgid "My Account"
+msgstr "Mi cuenta"
+
+#: templates/default/layout.html:36
+msgid "My Courses"
+msgstr "Mis cursos"
+
+#: templates/default/layout.html:47
+msgid "About us"
+msgstr "Sobre nosotros"
+
+#: templates/default/layout.html:47
+msgid "Services and conditions"
+msgstr "Servicios y condiciones"
+
+#: templates/default/layout.html:47
+#: templates/default/contact/form.html:30
+#: templates/default/contact/form.html:34
+msgid "Contact"
+msgstr "Contactar"
+
+#: templates/default/contact/form.html:35
+#: templates/default/partner/contact.html:14
+msgid "Name"
+msgstr "Nombre"
+
+#: templates/default/contact/form.html:36
+#: templates/default/partner/register.html:85
+#: templates/default/partner/remember.html:34
+msgid "Email"
+msgstr "Email"
+
+#: templates/default/contact/form.html:37
+msgid "Message"
+msgstr "Mensaje"
+
+#: templates/default/contact/form.html:40
+msgid "Submit"
+msgstr "Enviar"
+
+#: templates/default/partner/changepassword.html:19
+msgid "Insert your new password"
+msgstr "Inserte la nueva contraseña"
+
+#: templates/default/partner/changepassword.html:32
+#: templates/default/partner/menu.html:5
+#: templates/default/partner/profile.html:18
+msgid "Change password"
+msgstr "Cambiar contraseña"
+
+#: templates/default/partner/contact.html:15
+msgid "E-Mail"
+msgstr "E-Mail"
+
+#: templates/default/partner/contact.html:16
+msgid "Mobile"
+msgstr "Móbil"
+
+#: templates/default/partner/login.html:21
+msgid "User"
+msgstr "Usuario"
+
+#: templates/default/partner/login.html:25
+msgid "Password"
+msgstr "Contraseña"
+
+#: templates/default/partner/login.html:26
+msgid "Remember password"
+msgstr "Recordar contraseña"
+
+#: templates/default/partner/login.html:29
+msgid "Session start"
+msgstr "Iniciar sessión"
+
+#: templates/default/partner/menu.html:4
+msgid "Account"
+msgstr "Cuenta"
+
+#: templates/default/partner/menu.html:4
+#: templates/default/partner/profile.html:17
+msgid "Your account"
+msgstr "Su cuenta"
+
+#: templates/default/partner/profile.html:14
+#, python-format
+msgid "Hello %(full_name)s."
+msgstr "Hola %(full_name)s."
+
+#: templates/default/partner/profile.html:23
+#: templates/default/training/exam.html:5
+#: templates/default/training/index.html:3
+#: templates/default/training/offer.html:5
+#: templates/default/training/questionarie.html:21
+#: templates/default/training/wiki.html:5
+msgid "My Offers"
+msgstr "Sus cursos"
+
+#: templates/default/partner/register.html:41
+msgid "New student"
+msgstr "Nuevo estudiante"
+
+#: templates/default/partner/register.html:44
+msgid "student"
+msgstr "estudiante"
+
+#: templates/default/partner/register.html:48
+msgid "Vat"
+msgstr "NIF"
+
+#: templates/default/partner/register.html:55
+msgid "Address"
+msgstr "Dirección"
+
+#: templates/default/partner/register.html:59
+msgid "ZIP"
+msgstr "Código postal"
+
+#: templates/default/partner/register.html:63
+msgid "City"
+msgstr "Ciudad"
+
+#: templates/default/partner/register.html:67
+msgid "Country"
+msgstr "País"
+
+#: templates/default/partner/register.html:74
+msgid "Login user"
+msgstr "Identificarse"
+
+#: templates/default/partner/register.html:88
+msgid "Remember?"
+msgstr "Recordar?"
+
+#: templates/default/partner/register.html:92
+msgid "To create an Account insert the same number"
+msgstr "Para crear una cuenta inserte el mismo número"
+
+#: templates/default/partner/register.html:103
+msgid "Create new account"
+msgstr "Crea una nueva cuenta"
+
+#: templates/default/partner/register.html:104
+msgid "Required Fields"
+msgstr "Campos requeridos"
+
+#: templates/default/partner/remember.html:30
+msgid "Insert your email and username and new password are you send it"
+msgstr "Inserte su correo electrónico y nombre de usuario y una nueva contraseña será enviada."
+
+#: templates/default/partner/remember.html:38
+msgid "Remember"
+msgstr "Recordar"
+
+#: templates/default/training/exam.html:11
+#: templates/default/training/offer.html:12
+msgid "Objective"
+msgstr "Objetivo"
+
+#: templates/default/training/exam.html:14
+msgid "Do an exam"
+msgstr "Hacer el exámen"
+
+#: templates/default/training/exam.html:15
+msgid "remember to do the exam"
+msgstr "recuerde de realizar el exámen"
+
+#: templates/default/training/exam.html:15
+msgid "Start the exam"
+msgstr "Iniciar el exámen"
+
+#: templates/default/training/exam.html:15
+msgid "I'm ready to start the exam"
+msgstr "Estoy preparado para realizar el exámen"
+
+#: templates/default/training/exam.html:16
+msgid "Result"
+msgstr "Resultado"
+
+#: templates/default/training/exam.html:17
+msgid "your mark is"
+msgstr "su puntuación es"
+
+#: templates/default/training/exam.html:17
+msgid "of"
+msgstr "de"
+
+#: templates/default/training/exam.html:17
+#: templates/default/training/questionarie.html:31
+msgid "points"
+msgstr "puntos"
+
+#: templates/default/training/offer.html:11
+msgid "Description"
+msgstr "Descripción"
+
+#: templates/default/training/offer.html:13
+msgid "Requeriments"
+msgstr "Requerimientos"
+
+#: templates/default/training/offer.html:17
+msgid "Courses"
+msgstr "Materias"
+
+#: templates/default/training/offer.html:21
+msgid "Documentation"
+msgstr "Documentación"
+
+#: templates/default/training/offer.html:22
+msgid "Documentation is not available for this course"
+msgstr "La documentación no se encuentra disponible en este curso"
+
+#: templates/default/training/offer.html:26
+msgid "Exam"
+msgstr "Exámen"
+
+#: templates/default/training/questionarie.html:9
+msgid ""
+"Are you sure to have finished the exam?\\n"
+"If you have finished the exam you could not  return it"
+msgstr ""
+"Esta seguro de finalizar y enviar?\\n"
+"Una vez enviado será corregido y no podreis volver a realizar el exámen."
+
+#: templates/default/training/questionarie.html:9
+msgid "Questionaire confirmation"
+msgstr "Confirmación de questionario"
+
+#: templates/default/training/questionarie.html:14
+msgid "You have cancel the exam! Review and send it!"
+msgstr "Ha cancelado y no se ha enviado. Recuerde que debeis realizar este exámen."
+
+#: templates/default/training/questionarie.html:14
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: templates/default/training/questionarie.html:27
+msgid "You need"
+msgstr "Necesita"
+
+#: templates/default/training/questionarie.html:27
+msgid "points to pass the exam"
+msgstr "puntos para passar el exámen"
+
+#: templates/default/training/questionarie.html:36
+msgid "Yes"
+msgstr "Sí"
+
+#: templates/default/training/questionarie.html:36
+msgid "No"
+msgstr "No"
+
+#: templates/default/training/questionarie.html:42
+msgid "Send exam"
+msgstr "Enviar exámen"
+

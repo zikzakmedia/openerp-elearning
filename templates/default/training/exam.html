@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% load i18n %}
+
+{% block head %}<link rel="canonical" href="{{ url }}{{ LANGUAGE_CODE }}/training/{{ offer.alias }}/{{ course.alias }}/{{exam.alias}}" />{% endblock %}
+{% block pathway %}<div id="pathway"><ul><li><a href="/">{{ site_title }}</a></li><li>></li><li><a href="/training/">{% trans "My Offers" %}</a></li><li>></li><li><a href="/training/{{ offer.alias }}/" alt="{{ offer.name }}">{{ offer.name }}</a></li><li>></li><li><a href="/training/{{ offer.alias }}/{{ course.alias }}/{{exam.alias}}" alt="{{ exam.name }}">{{ exam.name }}</a></li></div>{% endblock %}
+
+{% block content %}
+<div id="exam-detail">
+    <div class="content">
+        <h1><a href="/training/{{ offer.alias }}/{{ course.alias }}/{{exam.alias}}" alt="{{ exam.name }}">{{ exam.name }}</a></h1>
+        {% if exam.objective %}<h2>{% trans "Objective" %}</h2><p>{{ exam.objective }}</p>{% endif %}
+    </div>
+    <div class="make">
+        {% if make_exam %}<h2>{% trans "Do an exam" %}</h2>
+        <p>{{full_name}}, {% trans "remember to do the exam" %}.<br/><a href="/training/{{ offer.alias }}/{{ course.alias }}/questionarie/{{exam.alias}}" alt="{% trans "Start the exam" %}">{% trans "I'm ready to start the exam" %}</a></p>
+        {% else %}<h2>{% trans "Result" %}</h2>
+        <p>{{full_name}}, {% trans "your mark is" %} <strong>{{ participation.result }}</strong> {% trans "of" %} <strong>{{ participation.total_points }}</strong> {% trans "points" %} <strong>({{ participation.result_pourcentage }}%)</strong>.<br/>{% endif %}
+    </div>
+</div>
+{% endblock %}

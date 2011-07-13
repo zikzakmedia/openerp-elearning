@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% load i18n %}
+
+{% block head %}<link rel="canonical" href="{{ url }}training/{{ offer.alias }}/" />{% endblock %}
+{% block pathway %}<div id="pathway"><ul><li><a href="/">{{ site_title }}</a></li><li>></li><li><a href="/training/">{% trans "My Offers" %}</a></li><li>></li><li><a href="/{{ LANGUAGE_CODE }}/training/{{ offer.alias }}/" alt="{{ offer.name }}">{{ offer.name }}</a></li></div>{% endblock %}
+
+{% block content %}
+<div id="offer-detail">
+    <div class="content">
+        <h1><a href="/training/{{ offer.alias }}/" alt="{{ offer.name }}">{{ offer.name }}</a></h1>
+        {% if offer.description %}<h2>{% trans "Description" %}</h2><p>{{ offer.description }}</p>{% endif %}
+        {% if offer.objective %}<h2>{% trans "Objective" %}</h2><p>{{ offer.objective }}</p>{% endif %}
+        {% if offer.requeriments %}<h2>{% trans "Requeriments" %}</h2><p>{{ offer.requeriments }}</p>{% endif %}
+    </div>
+    
+    <div class="course">
+        <h2>{% trans "Courses" %}</h2>
+        <ul class="course-display">
+            {% for course in courses %}<li><strong>{{ course.name }}</strong></li>
+                <ul class="wiki">
+                    <li class="first">{% trans "Documentation" %}</li>
+                    {% if not course.wikis %}<li>{% trans "Documentation is not available for this course" %}</li>{% endif %}
+                    {% for wiki in course.wikis %}<li><a href="/training/{{offer.alias}}/wiki/{{ wiki.alias }}" alt="{{ wiki.name }}">{{ wiki.name }}</a></li>{% endfor %}
+                </ul>
+                {% if course.course.questionnaire_ids %}<ul class="exam">
+                    <li class="first">{% trans "Exam" %}</li>
+                    {% for question in course.course.questionnaire_ids %}<li><a href="/training/{{ offer.alias }}/{{ course.alias }}/{{ question.alias }}" alt="{{ question.name }}">{{ question.name }}</a></li>{% endfor %}
+                </ul>{% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock %}

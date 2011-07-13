@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% load i18n %}
+{% block pathway %}<div id="pathway"><ul><li><a href="/">{{ site_title }}</a></li><li>></li><li><a href="/training/">{% trans "My Offers" %}</a></li></div>{% endblock %}
+
+{% block content %}
+<div id="offer-list">{% for offer in offers %}{% if offer.active %}
+    <div class="offer-content">
+        <h1><a href="/training/{{ offer.alias }}/" alt="{{ offer.name }}">{{ offer.name }}</a></h1>
+        <p>{{ offer.metadescription }}</p>
+    </div>
+{% endif %}{% endfor %}</div>
+{% endblock %}

@@ -1,0 +1,51 @@
+{% extends "blank.html" %}
+{% load i18n %}
+
+{% block head %}
+    <script type="text/javascript">
+     var RecaptchaOptions = {
+        theme : 'clean'
+     };
+     </script>
+{% endblock %}
+{% block body_class %}remember{% endblock %}
+{% block content %}
+<div id="container">
+    <div id="header">
+        <div id="branding">
+            <h1 id="site-name">{{ title }}</h1>
+        </div>
+    </div>
+    {% if message %}
+    <div id="message">
+        <h1>
+        {% for msg in message %}
+           {{ msg }}<br/>
+        {% endfor %}
+        </h1>
+    </div>
+    {% endif %}
+    <div id="content" class="colM">
+        <div id="content-main">
+        <p>{% trans "Insert your email and new password are you send it" %}</p>
+        <form method="post" action="/partner/remember/">
+            <div style='display:none'>{% csrf_token %}</div>
+            <div class="form-row">
+                <label for="id_username">{% trans "Email" %}:</label> <input type="text" name="email" id="id_email" value="{{ email }}" />
+            </div>
+            <div class="form-row">{{ html_captcha|safe }}</div>
+            <div class="submit-row">
+                <label>&nbsp;</label><input type="submit" value="{% trans "Remember" %}" />
+            </div>
+        </form>
+
+        <script type="text/javascript">
+        document.getElementById('id_username').focus()
+        </script>
+        </div>
+        <br class="clear" />
+    </div>
+
+    <div id="footer"><a href="http://www.zikzakmedia.com" alt="Zikzakmedia"><img src="{{ MEDIA_URL }}logo_small.png" alt="{{ title }}" title="{{ title }}" width="150" class="textmiddle"/></a> <span class="footer_title">{{ footer_title }}</span></div>
+</div>
+{% endblock %}

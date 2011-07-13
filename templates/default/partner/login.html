@@ -1,0 +1,42 @@
+{% extends "blank.html" %}
+{% load i18n %}
+{% block body_class %}login{% endblock %}
+{% block content %}
+<div id="container">
+    <div id="header">
+        <div id="branding">
+            <h1 id="site-name">{{ title }}</h1>
+        </div>
+    </div>
+    {% if error %}
+    <div id="message">
+        <h1>{{ error }}</h1>
+    </div>
+    {% endif %}
+    <div id="content" class="colM">
+        <div id="content-main">
+        <form action="/partner/" method="post" id="login-form">
+            <div style='display:none'>{% csrf_token %}</div>
+            <div class="form-row">
+                <label for="id_username">{% trans "User" %}:</label> <input type="text" name="username" id="id_username" />
+            </div>
+
+            <div class="form-row">
+                <label for="id_password">{% trans "Password" %}:</label> <input type="password" name="password1" id="id_password1" /><br/>
+                <a href="/partner/remember/" alt="{% trans "Remember password" %}">{% trans "Remember password" %}</a>
+            </div>
+            <div class="submit-row">
+                <label>&nbsp;</label><input type="submit" value="{% trans "Session start" %}" />
+            </div>
+        </form>
+
+        <script type="text/javascript">
+        document.getElementById('id_username').focus()
+        </script>
+        </div>
+        <br class="clear" />
+    </div>
+
+    <div id="footer"><a href="http://www.zikzakmedia.com" alt="Zikzakmedia"><img src="{{ MEDIA_URL }}logo_small.png" alt="{{ title }}" title="{{ title }}" width="150" class="textmiddle"/></a> <span class="footer_title">{{ footer_title }}</span></div>
+</div>
+{% endblock %}

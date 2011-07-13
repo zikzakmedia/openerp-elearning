@@ -1,0 +1,309 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-07-13 09:48+0200\n"
+"PO-Revision-Date: 2011-07-13 11:01+0100\n"
+"Last-Translator: Raimon Esteve <resteve@zikzakmedia.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: settings.py:42
+msgid "Catalan"
+msgstr "Català"
+
+#: templates/default/404.html:9
+msgid "404 Not Found"
+msgstr "404 pàgina no trobada"
+
+#: templates/default/error.html:5
+msgid "Error"
+msgstr "Error"
+
+#: templates/default/error.html:10
+msgid "An unexpected error has occurred and has not been able to continue. Repeat again or contact us."
+msgstr "Un error inesperat ha tingut lloc i no ha estat capaç de continuar. Repetiu de nou o poseu-vos en contacte amb nosaltres."
+
+#: templates/default/layout.html:30
+msgid "e-learning OpenERP"
+msgstr "e-learning OpenERP"
+
+#: templates/default/layout.html:34
+msgid "Login"
+msgstr "Entra"
+
+#: templates/default/layout.html:34
+#: templates/default/partner/menu.html:6
+#: templates/default/partner/profile.html:19
+msgid "Logout"
+msgstr "Surt"
+
+#: templates/default/layout.html:35
+msgid "My Account"
+msgstr "El meu compte"
+
+#: templates/default/layout.html:36
+msgid "My Courses"
+msgstr "Els meus cursos"
+
+#: templates/default/layout.html:47
+msgid "About us"
+msgstr "Sobre nosaltres"
+
+#: templates/default/layout.html:47
+msgid "Services and conditions"
+msgstr "Serveis i condicions"
+
+#: templates/default/layout.html:47
+#: templates/default/contact/form.html:30
+#: templates/default/contact/form.html:34
+msgid "Contact"
+msgstr "Contacta"
+
+#: templates/default/contact/form.html:35
+#: templates/default/partner/contact.html:14
+msgid "Name"
+msgstr "Nom"
+
+#: templates/default/contact/form.html:36
+#: templates/default/partner/register.html:85
+#: templates/default/partner/remember.html:34
+msgid "Email"
+msgstr "Email"
+
+#: templates/default/contact/form.html:37
+msgid "Message"
+msgstr "Missatge"
+
+#: templates/default/contact/form.html:40
+msgid "Submit"
+msgstr "Envia"
+
+#: templates/default/partner/changepassword.html:19
+msgid "Insert your new password"
+msgstr "Afegeix la nova contrasenya"
+
+#: templates/default/partner/changepassword.html:32
+#: templates/default/partner/menu.html:5
+#: templates/default/partner/profile.html:18
+msgid "Change password"
+msgstr "Canvia la contrasenya"
+
+#: templates/default/partner/contact.html:15
+msgid "E-Mail"
+msgstr "Email"
+
+#: templates/default/partner/contact.html:16
+msgid "Mobile"
+msgstr "Mòbil"
+
+#: templates/default/partner/login.html:21
+msgid "User"
+msgstr "Usuari"
+
+#: templates/default/partner/login.html:25
+msgid "Password"
+msgstr "Contrasenya"
+
+#: templates/default/partner/login.html:26
+msgid "Remember password"
+msgstr "Recorda contrasenya"
+
+#: templates/default/partner/login.html:29
+msgid "Session start"
+msgstr "Comença sessió"
+
+#: templates/default/partner/menu.html:4
+msgid "Account"
+msgstr "Compte"
+
+#: templates/default/partner/menu.html:4
+#: templates/default/partner/profile.html:17
+msgid "Your account"
+msgstr "El meu compte"
+
+#: templates/default/partner/profile.html:14
+#, python-format
+msgid "Hello %(full_name)s."
+msgstr "Hola %(full_name)s."
+
+#: templates/default/partner/profile.html:23
+#: templates/default/training/exam.html:5
+#: templates/default/training/index.html:3
+#: templates/default/training/offer.html:5
+#: templates/default/training/questionarie.html:21
+#: templates/default/training/wiki.html:5
+msgid "My Offers"
+msgstr "Els meus cursos"
+
+#: templates/default/partner/register.html:41
+msgid "New student"
+msgstr "Nou estudiant"
+
+#: templates/default/partner/register.html:44
+msgid "student"
+msgstr "Estudiant"
+
+#: templates/default/partner/register.html:48
+msgid "Vat"
+msgstr "NIF"
+
+#: templates/default/partner/register.html:55
+msgid "Address"
+msgstr "Adreça"
+
+#: templates/default/partner/register.html:59
+msgid "ZIP"
+msgstr "Codi postal"
+
+#: templates/default/partner/register.html:63
+msgid "City"
+msgstr "Ciutat"
+
+#: templates/default/partner/register.html:67
+msgid "Country"
+msgstr "País"
+
+#: templates/default/partner/register.html:74
+msgid "Login user"
+msgstr "Identificació"
+
+#: templates/default/partner/register.html:88
+msgid "Remember?"
+msgstr "Recorda?"
+
+#: templates/default/partner/register.html:92
+msgid "To create an Account insert the same number"
+msgstr "Per crear un compte insertiu el mateix número"
+
+#: templates/default/partner/register.html:103
+msgid "Create new account"
+msgstr "Crea un compte"
+
+#: templates/default/partner/register.html:104
+msgid "Required Fields"
+msgstr "Requereixen camps"
+
+#: templates/default/partner/remember.html:30
+msgid "Insert your email and username and new password are you send it"
+msgstr "Afegiu el seu email, nom d'usuari i nova contrasenya i una nova contrasenya será enviada."
+
+#: templates/default/partner/remember.html:38
+msgid "Remember"
+msgstr "Recorda"
+
+#: templates/default/training/exam.html:11
+#: templates/default/training/offer.html:12
+msgid "Objective"
+msgstr "Objectiu"
+
+#: templates/default/training/exam.html:14
+msgid "Do an exam"
+msgstr "Fer un examen"
+
+#: templates/default/training/exam.html:15
+msgid "remember to do the exam"
+msgstr "recorda que encara no ha fet l'exàmen"
+
+#: templates/default/training/exam.html:15
+msgid "Start the exam"
+msgstr "Comença l'examen"
+
+#: templates/default/training/exam.html:15
+msgid "I'm ready to start the exam"
+msgstr "Estic preparat per començar l'examen"
+
+#: templates/default/training/exam.html:16
+msgid "Result"
+msgstr "Resultat"
+
+#: templates/default/training/exam.html:17
+msgid "your mark is"
+msgstr "el seu resultat és"
+
+#: templates/default/training/exam.html:17
+msgid "of"
+msgstr "de"
+
+#: templates/default/training/exam.html:17
+#: templates/default/training/questionarie.html:31
+msgid "points"
+msgstr "punts"
+
+#: templates/default/training/offer.html:11
+msgid "Description"
+msgstr "Descripció"
+
+#: templates/default/training/offer.html:13
+msgid "Requeriments"
+msgstr "Requeriments"
+
+#: templates/default/training/offer.html:17
+msgid "Courses"
+msgstr "Matèries"
+
+#: templates/default/training/offer.html:21
+msgid "Documentation"
+msgstr "Documentació"
+
+#: templates/default/training/offer.html:22
+msgid "Documentation is not available for this course"
+msgstr "La documentació no està disponible per aquesta matèria"
+
+#: templates/default/training/offer.html:26
+msgid "Exam"
+msgstr "Examen"
+
+#: templates/default/training/questionarie.html:9
+msgid ""
+"Are you sure to have finished the exam?\\n"
+"If you have finished the exam you could not  return it"
+msgstr ""
+"Està segur de finalitzar i enviar-ho?\\n"
+"Una vegada ho envieu será corregit i no podreu tornar a realitzar aquest exàmen."
+
+#: templates/default/training/questionarie.html:9
+msgid "Questionaire confirmation"
+msgstr "Confirmació de questionari"
+
+#: templates/default/training/questionarie.html:14
+msgid "You have cancel the exam! Review and send it!"
+msgstr "Ha cancelat i no heu enviat. Recordeu que heu de realitzar aquest exàmen."
+
+#: templates/default/training/questionarie.html:14
+msgid "Cancel"
+msgstr "Cancela"
+
+#: templates/default/training/questionarie.html:27
+msgid "You need"
+msgstr "Necessiteu"
+
+#: templates/default/training/questionarie.html:27
+msgid "points to pass the exam"
+msgstr "punts per passar l'examen"
+
+#: templates/default/training/questionarie.html:36
+msgid "Yes"
+msgstr "Si"
+
+#: templates/default/training/questionarie.html:36
+msgid "No"
+msgstr "No"
+
+#: templates/default/training/questionarie.html:42
+msgid "Send exam"
+msgstr "Envia l'examen"
+
+#~ msgid "Zoook - e-sale for OpenERP"
+#~ msgstr "Zook botiga per OpenERP"
+#~ msgid "Remember Password"
+#~ msgstr "Recordar contrasenya"
+

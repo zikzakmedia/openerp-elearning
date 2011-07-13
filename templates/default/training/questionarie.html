@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+{% load i18n %}
+
+{% block head %}<link rel="canonical" href="{{ url }}{{ LANGUAGE_CODE }}/training/{{ offer.alias }}/{{ course.alias }}/{{exam.alias}}" />
+<link href="{{ MEDIA_URL }}css/jquery.alerts.css" rel="stylesheet" type="text/css" media="screen" />    
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#confirm").click(function() {
+            jConfirm('{% trans "Are you sure to have finished the exam?\nIf you have finished the exam you could not  return it" %}', '{% trans "Questionaire confirmation" %}', function(r) {
+            if (r){
+                document.forms["questionaireForm"].submit();
+                return true
+            }else{
+                jAlert('error', '{% trans "You have cancel the exam! Review and send it!" %}', '{% trans "Cancel" %}');
+                return false;
+            }
+            });
+        });
+    });
+</script>{% endblock %}
+{% block pathway %}<div id="pathway"><ul><li><a href="/">{{ site_title }}</a></li><li>></li><li><a href="/training/">{% trans "My Offers" %}</a></li><li>></li><li><a href="/training/{{ offer.alias }}/" alt="{{ offer.name }}">{{ offer.name }}</a></li><li>></li><li><a href="/training/{{ offer.alias }}/{{ course.alias }}/{{exam.alias}}" alt="{{ exam.name }}">{{ exam.name }}</a></li></div>{% endblock %}
+
+{% block content %}
+<div id="questionaire-detail">
+    <div class="content">
+        <h1><a href="/training/{{ offer.alias }}/{{ course.alias }}/{{exam.alias}}" alt="{{ exam.name }}">{{ exam.name }}</a></h1>
+        <p>{% trans "You need" %} {{exam.total_point}} {% trans "points to pass the exam" %}.</p>
+        <form action="/training/{{ offer.alias }}/{{ course.alias }}/answer/{{exam.alias}}" class="cmxform" id="questionaireForm" method="post">
+        {% for question in questions %}
+        <div class="{% cycle 'question1' 'question2' %}">
+            <p><strong>{{ forloop.counter }}.</strong> {{ question.question }}<br/><strong>{{ question.point }} {% trans "points" %}</strong></p>
+            <div class="answers">
+                {% if question.type == 'qcm' %}{% for qcm in question.question_answer_ids %}<input type="checkbox" class="checkbox" id="qcm_{{question.id}}" value="{{ qcm.id }}" name="qcm_{{question.id}}[]" /> {{ qcm.name }} {% endfor %}{% endif %}
+                {% if question.type == 'qcu' %}{% for qcu in question.question_answer_ids %}<input type="radio" class="radio" id="qcu_{{question.id}}" value="{{ qcu.id }}" name="qcu_{{question.id}}" /> {{ qcu.name }} {% endfor %}{% endif %}
+                {% if question.type == 'plain' %}<textarea id="plain_{{question.id}}" name="plain_{{question.id}}" class="textarea"></textarea>{% endif %}
+                {% if question.type == 'yesno' %}<input  type="radio" id="yesno_{{question.id}}" value="yes" name="yesno_{{question.id}}" /> {% trans "Yes" %} <input  type="radio" id="yesno_{{question.id}}" value="no" name="yesno_{{question.id}}" /> {% trans "No" %}{% endif %}
+            </div>
+        </div>
+        {% endfor %}
+        {% csrf_token %}
+        <div class="sendtest">
+            <input id="confirm" type="button" value="{% trans "Send exam" %}" class="border2 button-confirm"/>
+        </div>
+        </form>
+    </div>
+</div>
+
+<script type="text/javascript" src="{{ MEDIA_URL }}js/jquery.alerts.js"></script>
+<script type="text/javascript" src="{{ MEDIA_URL }}js/jquery.ui.draggable.js"></script>
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% load i18n %}
+
+{% block head %}<link rel="canonical" href="{{ url }}training/{{ offer.alias }}/wiki/{{wiki.alias}}" />{% endblock %}
+{% block pathway %}<div id="pathway"><ul><li><a href="/">{{ site_title }}</a></li><li>></li><li><a href="/training/">{% trans "My Offers" %}</a></li><li>></li><li><a href="/training/{{ offer.alias }}/" alt="{{ offer.name }}">{{ offer.name }}</a></li><li>></li><li><a href="/training/{{ offer.alias }}/wiki/{{wiki.alias}}" alt="{{ wiki.name }}">{{ wiki.name }}</a></li></div>{% endblock %}
+
+{% block content %}
+<div id="wiki-detail">
+    <div class="content">
+        <h1><a href="/training/{{ wiki.alias }}" alt="{{ wiki.name }}">{{ wiki.name }}</a></h1>
+        {{ wiki_content|safe }}
+    </div>
+</div>
+{% endblock %}

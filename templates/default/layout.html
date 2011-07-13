@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es-es" lang="es-es" dir="ltr" >
+{% load i18n %}{% get_current_language as LANGUAGE_CODE %}{% get_available_languages as LANGUAGES %}
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="{{ metakeywords }}" />
+    <meta name="description" content="{{ metadescription }}" />
+    <meta name="generator" content="OpenERP. Django Python Framework" />
+    <title>{{ title }}</title>
+
+    <link href="{{ MEDIA_URL }}images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+    <link href="{{ MEDIA_URL }}css/style.css" rel="stylesheet" type="text/css" media="screen">
+    <!--[if IE]>
+        <link href="./static/css/style_ie.css" rel="stylesheet" type="text/css" media="screen">
+    <![endif]-->
+    <link href="{{ MEDIA_URL }}css/print.css" rel="stylesheet" type="text/css" media="print">
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+
+    {% block head %}{% endblock %}
+</head>
+<body>
+
+<div class="page">
+
+    <div class="header-container">
+    
+    <h1 id="logo"><a href="/"><img src="{{ MEDIA_URL }}images/logo.png" title="{% trans "e-learning OpenERP" %}"/></a></h1>
+
+    <div class="navigation">
+        <ul class="links">
+            <li class="first">{% if not user.is_authenticated %}<a href="/partner/">{% trans "Login" %}</a>{% else %}<a href="/partner/logout/">{% trans "Logout" %}</a>{% endif %}</li>
+            {% if user.is_authenticated %}<li class="first"><a href="/partner/">{% trans "My Account" %}</a></li>{% endif %}
+            {% if user.is_authenticated %}<li><a href="/training/">{% trans "My Courses" %}</a></li>{% endif %}
+        </ul>
+    </div>
+
+    </div>
+    {% block pathway %}{% endblock %}
+    <div id="page-wrap">
+        {% block content %}{% endblock %}
+    </div>
+
+    <div id="footer-bottom">
+            <p><a  href="{% trans "About us"|slugify %}">{% trans "About us" %}</a> | <a href="{% trans "Services and conditions"|slugify %}">{% trans "Services and conditions" %}</a> | <a href="/contact/">{% trans "Contact" %}</a></p>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    mainmenu();
+    {% block jqueryload %}{% endblock %}
+});
+</script>
+
+</body>
+</html>

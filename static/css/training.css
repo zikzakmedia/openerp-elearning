@@ -1,0 +1,32 @@
+#offer-list { margin-top:20px}
+.offer-content { margin:5px; padding:10px; border: 1px solid #f16048; background-color:#f6f3f3; color:#df280a; }
+.offer-content h1 { font-size: 1.5em }
+.offer-content p { color:#000 }
+
+#offer-detail { margin-top:20px}
+#offer-detail h1 { font-size: 1.5em}
+#offer-detail .content { float:left; width:500px}
+#offer-detail .course {float:right; width:400px; padding:10px; background:#f6f3f3}
+#offer-detail .course-display { }
+.content h2 { font-size:16px}
+.content p { margin-bottom:10px}
+
+#wiki-detail { margin-top:20px}
+#wiki-detail h1 { font-size: 1.5em}
+#wiki-detail .content { float:left; width:100%}
+#toc { float:right; margin-left:5px; padding-left:5px; border-left: 1px solid #e1d3d3}
+
+.course-display li { padding-bottom:2px}
+.course-display li.first { text-transform: uppercase; border-bottom: 1px solid #E7DDDD}
+
+.wiki li {padding-left:10px;}
+.exam li {padding-left:10px; font-size:12px}
+
+#exam-detail .content { float:left; width:500px}
+#exam-detail .make {float:right; width:400px; padding:10px; background-color:#f6f3f3}
+
+#questionaire-detail .content { float:left; width:100%}
+#questionaire-detail TEXTAREA { width:100%; background-color: #f6f6f6; border:1px solid #e3e3e3}
+.question1 { margin-bottom:5px; padding:10px; background-color:#f6f3f3;}
+.question2 { margin-bottom:5px; padding:10px; background-color:#fdfdfd;}
+.sendtest { padding:10px 10px 10px 20px; border: 1px solid #E7DDDD}
