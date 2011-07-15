@@ -2,31 +2,35 @@
 OpenERP e-learning
 ====================
 
+Source code e-learning App for Django. Show Training OpenERP (course, offers, subscriptions, exams,...) in your webpage.
+
 Requeriments
 ============
 
-#. Intall OOOP. 
-    You can download OOOP github project:
-    https://github.com/zikzakmedia/ooop
-
-#. Intall Training Modules OpenERP
+#. Training Modules OpenERP
     - training_exam
     - training_django
     - training_exam_django
 
     https://code.launchpad.net/~openerp-commiter/openobject-addons/extra-6.0
+    
+#. Django 1.3
+
+#. OOOP. OpenObject On Python 
+    You can download OOOP github project:
+    https://github.com/zikzakmedia/ooop
 
 Configuration
 =============
 
-Edit config.py with OpenERP connection. If you have install Pyro Protocol, you can use this protocol. Default Protoco is XML-RPC
+#. Edit config.py with OpenERP connection. If you have install Pyro Protocol, you can use this protocol. Default Protocol is XML-RPC
 
-Install OpenERP Modules availables addons-extra:
-* training
-* training_elearning
-* training_exam
-* training_doc
-* training_django
+#. Install OpenERP Modules availables addons-extra:
+    * training
+    * training_elearning
+    * training_exam
+    * training_doc
+    * training_django
 
 Licence
 =======

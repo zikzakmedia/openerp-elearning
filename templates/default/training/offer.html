@@ -24,7 +24,7 @@
                 </ul>
                 {% if course.course.questionnaire_ids %}<ul class="exam">
                     <li class="first">{% trans "Exam" %}</li>
-                    {% with course.course.questionnaire_ids|first as question %}<li><a href="/training/{{ offer.alias }}/{{ course.alias }}/{{ question.alias }}" alt="{{ question.name }}">{{ question.name }}</a></li>{% endwith %}
+                    {% with course.course.questionnaire_ids|first as question %}<li><a href="/training/{{ offer.alias }}/{{ course.alias }}/{{ question.questionnaire_id.alias }}" alt="{{ question.questionnaire_id.name }}">{{ question.questionnaire_id.name }}</a></li>{% endwith %}
                 </ul>{% endif %}
             {% endfor %}
         </ul>
